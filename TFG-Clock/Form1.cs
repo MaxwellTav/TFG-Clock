@@ -10,11 +10,37 @@ using System.Windows.Forms;
 
 namespace TFG_Clock
 {
-    public partial class Form1 : Form
+    public partial class Index : Form
     {
-        public Form1()
+        public Index()
         {
             InitializeComponent();
+        }
+
+        //Ticki Event (Reloj / Timer)
+        private void clock_Tick(object sender, EventArgs e)
+        {
+            clockText.Text = DateTime.Now.ToString("T");
+        }
+
+        //Al iniciar
+        private void Index_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            DialogResult = MessageBox.Show("¿Está seguro que desea salir de la aplicación?", "Está saliendo de la app!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+            if (DialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }
