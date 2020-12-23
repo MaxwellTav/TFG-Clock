@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.hoursText = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -68,6 +69,14 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.secondsGauge = new Bunifu.Framework.UI.BunifuGauge();
+            this.minutesGauge = new Bunifu.Framework.UI.BunifuGauge();
+            this.hoursGauge = new Bunifu.Framework.UI.BunifuGauge();
+            this.label22 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,13 +101,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(422, 21);
+            this.panel1.Size = new System.Drawing.Size(732, 21);
             this.panel1.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(379, -1);
+            this.button1.Location = new System.Drawing.Point(689, -1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(22, 22);
             this.button1.TabIndex = 4;
@@ -110,7 +119,7 @@
             // exitButton
             // 
             this.exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.exitButton.Location = new System.Drawing.Point(400, -1);
+            this.exitButton.Location = new System.Drawing.Point(710, -1);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(22, 22);
             this.exitButton.TabIndex = 3;
@@ -134,14 +143,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(10, 421);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(412, 10);
+            this.panel3.Size = new System.Drawing.Size(722, 10);
             this.panel3.TabIndex = 2;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(412, 21);
+            this.panel4.Location = new System.Drawing.Point(722, 21);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 400);
             this.panel4.TabIndex = 2;
@@ -543,11 +552,114 @@
             this.label21.Text = ":";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // secondsGauge
+            // 
+            this.secondsGauge.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("secondsGauge.BackgroundImage")));
+            this.secondsGauge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondsGauge.Location = new System.Drawing.Point(442, 286);
+            this.secondsGauge.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.secondsGauge.Name = "secondsGauge";
+            this.secondsGauge.ProgressBgColor = System.Drawing.Color.Gray;
+            this.secondsGauge.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.secondsGauge.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.secondsGauge.Size = new System.Drawing.Size(143, 136);
+            this.secondsGauge.TabIndex = 36;
+            this.secondsGauge.Tag = "gauge";
+            this.secondsGauge.Thickness = 60;
+            this.secondsGauge.Value = 0;
+            // 
+            // minutesGauge
+            // 
+            this.minutesGauge.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minutesGauge.BackgroundImage")));
+            this.minutesGauge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minutesGauge.Location = new System.Drawing.Point(442, 155);
+            this.minutesGauge.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.minutesGauge.Name = "minutesGauge";
+            this.minutesGauge.ProgressBgColor = System.Drawing.Color.Gray;
+            this.minutesGauge.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.minutesGauge.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.minutesGauge.Size = new System.Drawing.Size(143, 136);
+            this.minutesGauge.TabIndex = 37;
+            this.minutesGauge.Tag = "gauge";
+            this.minutesGauge.Thickness = 60;
+            this.minutesGauge.Value = 0;
+            // 
+            // hoursGauge
+            // 
+            this.hoursGauge.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hoursGauge.BackgroundImage")));
+            this.hoursGauge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoursGauge.Location = new System.Drawing.Point(442, 9);
+            this.hoursGauge.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.hoursGauge.Name = "hoursGauge";
+            this.hoursGauge.ProgressBgColor = System.Drawing.Color.Gray;
+            this.hoursGauge.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.hoursGauge.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.hoursGauge.Size = new System.Drawing.Size(143, 136);
+            this.hoursGauge.TabIndex = 38;
+            this.hoursGauge.Tag = "gauge";
+            this.hoursGauge.Thickness = 24;
+            this.hoursGauge.Value = 0;
+            // 
+            // label22
+            // 
+            this.label22.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label22.Font = new System.Drawing.Font("Chiller", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(602, 175);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(106, 100);
+            this.label22.TabIndex = 39;
+            this.label22.Tag = "AMPM";
+            this.label22.Text = "XM";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.DarkRed;
+            this.panel9.Location = new System.Drawing.Point(424, 21);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(10, 400);
+            this.panel9.TabIndex = 10;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(495, 64);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(37, 15);
+            this.label23.TabIndex = 40;
+            this.label23.Text = "hours";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(488, 213);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(48, 15);
+            this.label24.TabIndex = 41;
+            this.label24.Text = "minutes";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(488, 339);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(52, 15);
+            this.label25.TabIndex = 42;
+            this.label25.Text = "seconds";
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 431);
+            this.ClientSize = new System.Drawing.Size(732, 431);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
@@ -583,6 +695,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
+            this.Controls.Add(this.hoursGauge);
+            this.Controls.Add(this.minutesGauge);
+            this.Controls.Add(this.secondsGauge);
+            this.Controls.Add(this.label22);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Index";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -590,6 +706,7 @@
             this.Load += new System.EventHandler(this.Index_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -634,6 +751,14 @@
         public System.Windows.Forms.Label label19;
         public System.Windows.Forms.Label label20;
         public System.Windows.Forms.Label label21;
+        private Bunifu.Framework.UI.BunifuGauge secondsGauge;
+        private Bunifu.Framework.UI.BunifuGauge minutesGauge;
+        private Bunifu.Framework.UI.BunifuGauge hoursGauge;
+        public System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
     }
 }
 

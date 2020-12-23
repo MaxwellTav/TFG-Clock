@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using Bunifu;
+using BunifuAnimatorNS;
 
 namespace TFG_Clock
 {
@@ -38,13 +40,13 @@ namespace TFG_Clock
             //Reloj digital, individual y flexible
             foreach (Control ctrl in this.Controls)
             {
-                if (ctrl.Tag == "minutes")
-                {
-                    ctrl.Text = DateTime.Now.ToString("mm");
-                }
                 if (ctrl.Tag == "seconds")
                 {
                     ctrl.Text = DateTime.Now.ToString("ss");
+                }
+                if (ctrl.Tag == "minutes")
+                {
+                    ctrl.Text = DateTime.Now.ToString("mm");
                 }
                 if (ctrl.Tag == "hours")
                 {
@@ -54,6 +56,11 @@ namespace TFG_Clock
                 {
                     ctrl.Text = DateTime.Now.ToString("tt");
                 }
+
+                secondsGauge.Value = DateTime.Now.Second;
+                minutesGauge.Value = DateTime.Now.Minute;
+                hoursGauge.Value = DateTime.Now.Hour;
+
             }
         }
         
@@ -96,5 +103,6 @@ namespace TFG_Clock
                 Application.Exit();
             }
         }
+        
     }
 }
