@@ -6,6 +6,7 @@ namespace TFG_Clock
     public partial class Index : Form
     {
 
+    
         public Index()
         {
             InitializeComponent();

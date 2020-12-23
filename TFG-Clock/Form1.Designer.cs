@@ -66,6 +66,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,13 +92,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(809, 21);
+            this.panel1.Size = new System.Drawing.Size(422, 21);
             this.panel1.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(766, -1);
+            this.button1.Location = new System.Drawing.Point(379, -1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(22, 22);
             this.button1.TabIndex = 4;
@@ -108,7 +110,7 @@
             // exitButton
             // 
             this.exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.exitButton.Location = new System.Drawing.Point(787, -1);
+            this.exitButton.Location = new System.Drawing.Point(400, -1);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(22, 22);
             this.exitButton.TabIndex = 3;
@@ -132,14 +134,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(10, 421);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(799, 10);
+            this.panel3.Size = new System.Drawing.Size(412, 10);
             this.panel3.TabIndex = 2;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(799, 21);
+            this.panel4.Location = new System.Drawing.Point(412, 21);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 400);
             this.panel4.TabIndex = 2;
@@ -399,7 +401,7 @@
             this.label12.Cursor = System.Windows.Forms.Cursors.Help;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("Ink Free", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(287, 258);
+            this.label12.Location = new System.Drawing.Point(274, 258);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(99, 48);
             this.label12.TabIndex = 25;
@@ -515,11 +517,39 @@
             this.label19.Text = ":";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label20
+            // 
+            this.label20.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label20.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(371, 350);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(23, 48);
+            this.label20.TabIndex = 33;
+            this.label20.Tag = "details";
+            this.label20.Text = ":";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label21.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(378, 178);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(23, 48);
+            this.label21.TabIndex = 34;
+            this.label21.Tag = "details";
+            this.label21.Text = ":";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 431);
+            this.ClientSize = new System.Drawing.Size(422, 431);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -602,6 +632,8 @@
         public System.Windows.Forms.Label label17;
         public System.Windows.Forms.Label label18;
         public System.Windows.Forms.Label label19;
+        public System.Windows.Forms.Label label20;
+        public System.Windows.Forms.Label label21;
     }
 }
 
