@@ -565,7 +565,7 @@
             this.secondsGauge.Size = new System.Drawing.Size(143, 136);
             this.secondsGauge.TabIndex = 36;
             this.secondsGauge.Tag = "gauge";
-            this.secondsGauge.Thickness = 60;
+            this.secondsGauge.Thickness = 20;
             this.secondsGauge.Value = 0;
             // 
             // minutesGauge
@@ -581,7 +581,7 @@
             this.minutesGauge.Size = new System.Drawing.Size(143, 136);
             this.minutesGauge.TabIndex = 37;
             this.minutesGauge.Tag = "gauge";
-            this.minutesGauge.Thickness = 60;
+            this.minutesGauge.Thickness = 20;
             this.minutesGauge.Value = 0;
             // 
             // hoursGauge
@@ -597,7 +597,7 @@
             this.hoursGauge.Size = new System.Drawing.Size(143, 136);
             this.hoursGauge.TabIndex = 38;
             this.hoursGauge.Tag = "gauge";
-            this.hoursGauge.Thickness = 24;
+            this.hoursGauge.Thickness = 20;
             this.hoursGauge.Value = 0;
             // 
             // label22
